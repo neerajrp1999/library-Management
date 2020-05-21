@@ -1,0 +1,12 @@
+Database name:  tester
+tables name: Active_Book_Detail, BookDetail, Issue_Book_History, loginD
+
+Some Changes:
+1)
+cnxn = pyodbc.connect("Driver={SQL Server};"
+                      "Server=.\;"
+                      "Database=tester;"
+                      "Trusted_Connection=yes;")
+cursor = cnxn.cursor()
+
+in this change Server= ... part with your server name(Look into pictures)
